@@ -1,3 +1,5 @@
+@import 'variables';
+
 body
     background-color: hsl(216, 12%, 8%)
     margin: 0
@@ -10,12 +12,25 @@ body
     border-radius: 15px
     display: flex
     flex-direction: column
+    font-family: $primary-font
     .container__logo
-        width: 10%
-        height: 25px
+        width: 12%
+        height: 30px
         background-image: url('../images/icon-star.svg')
         background-repeat: no-repeat
+        background-position: center center
         background-color: hsl(216, 12%, 54%)
         margin-top: 5%
         margin-left: 5%
         border-radius: 100%
+    .container__title, .container__paragraph, .container__rating
+        width: 90%
+        margin: auto
+    .container__title
+        font-weight: 700
+        margin-bottom: 5%
+        color: hsl(0, 0%, 100%)
+    .container__paragraph
+        font-weight: 400
+        font-size: 90%
+        color: hsl(217, 12%, 63%)

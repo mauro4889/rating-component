@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=Roboto&display=swap");
 body {
   background-color: #121417;
   margin: 0;
@@ -16,16 +17,35 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Overpass";
 }
 
 .main__container .container__logo {
-  width: 10%;
-  height: 25px;
+  width: 12%;
+  height: 30px;
   background-image: url("../images/icon-star.svg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-color: #7c8798;
   margin-top: 5%;
   margin-left: 5%;
   border-radius: 100%;
+}
+
+.main__container .container__title, .main__container .container__paragraph, .main__container .container__rating {
+  width: 90%;
+  margin: auto;
+}
+
+.main__container .container__title {
+  font-weight: 700;
+  margin-bottom: 5%;
+  color: white;
+}
+
+.main__container .container__paragraph {
+  font-weight: 400;
+  font-size: 90%;
+  color: #959eac;
 }
 /*# sourceMappingURL=index.css.map */
