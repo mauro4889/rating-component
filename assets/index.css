@@ -20,6 +20,24 @@ body {
   font-family: "Overpass";
 }
 
+@media (min-width: 767px) {
+  .main__container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .main__container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1365px) {
+  .main__container {
+    width: 20%;
+  }
+}
+
 .main__container .container__logo {
   width: 10%;
   height: 30px;
@@ -82,6 +100,13 @@ body {
   background-color: #959eac;
 }
 
+@media (min-width: 767px) {
+  .main__container .container__rating button {
+    width: 17%;
+    height: 38px;
+  }
+}
+
 .main__container .container__submit {
   width: 80%;
   height: 35px;
@@ -99,7 +124,47 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 767px) {
+  .main__container .container__submit {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .main__container .container__submit {
+    width: 90%;
+  }
+}
+
 /* ESTILOS DEL SUBMIT*/
+.main__container__submit {
+  width: 90%;
+  background-color: #252d37;
+  margin: 10% auto;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Overpass";
+}
+
+@media (min-width: 767px) {
+  .main__container__submit {
+    width: 50vw;
+    padding: center;
+  }
+}
+
+@media (min-width: 1023px) {
+  .main__container__submit {
+    width: 20vw;
+  }
+}
+
 .container__image {
   margin: auto;
   width: 60%;
@@ -111,6 +176,12 @@ body {
 .container__image img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 767px) {
+  .container__image {
+    margin-top: 10%;
+  }
 }
 
 .container__h2 {
@@ -127,5 +198,14 @@ body {
   margin: auto;
   font-weight: 400;
   margin-bottom: 5%;
+  font-size: 15px;
+}
+
+@media (min-width: 1023px) {
+  .container__submit__paragraph {
+    width: 90%;
+    font-size: 10px;
+    margin-bottom: 10%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
