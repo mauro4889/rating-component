@@ -1,25 +1,25 @@
 @import 'variables';
 
 body
-    background-color: hsl(216, 12%, 8%)
+    background-color: $VeryDarkBlue
     margin: 0
     padding: 0
 
 .main__container
     width: 90%
-    background-color: hsl(213, 19%, 18%)
+    background-color: $DarkBlue
     margin: 10% auto
     border-radius: 15px
     display: flex
     flex-direction: column
     font-family: $primary-font
     .container__logo
-        width: 12%
+        width: 10%
         height: 30px
         background-image: url('../images/icon-star.svg')
         background-repeat: no-repeat
         background-position: center center
-        background-color: hsl(216, 12%, 54%)
+        background-color: #1F2630
         margin-top: 5%
         margin-left: 5%
         border-radius: 100%
@@ -29,8 +29,66 @@ body
     .container__title
         font-weight: 700
         margin-bottom: 5%
+        margin-top: 10%
         color: hsl(0, 0%, 100%)
     .container__paragraph
         font-weight: 400
-        font-size: 90%
+        font-size: 15px
         color: hsl(217, 12%, 63%)
+    .container__rating
+        width: 90%
+        margin: auto
+        margin-top: 5%
+        margin-bottom: 5%
+        list-style: none
+        display: flex
+        justify-content: space-around
+        button
+            background-color: #2b323b
+            border: none
+            border-radius: 100%
+            width: 15%
+            height: 35px
+            font-weight: 700
+            color: hsl(0, 0%, 100%)
+            &:hover
+                background-color: $orange
+                cursor: pointer
+            &:focus
+                background-color: $LightGrey
+    .container__submit
+        width: 80%
+        height: 35px
+        margin: auto
+        margin-bottom: 5%
+        border-style: none
+        border-radius: 15px
+        background-color: $orange
+        color: $White
+        &:hover
+            background-color: $White
+            color: $orange
+            cursor: pointer
+
+/* ESTILOS DEL SUBMIT*/
+.container__image
+    margin: auto
+    width: 60%
+    height: 120px
+    margin-top: 5%
+    margin-bottom: 5%
+    img
+        width: 100%
+        height: 100%
+.container__h2
+    color: $White
+    width: 90%
+    text-align: center
+    font-weight: 700
+.container__submit__paragraph
+    color: $LightGrey
+    width: 80%
+    text-align: center
+    margin: auto
+    font-weight: 400
+    margin-bottom: 5%
